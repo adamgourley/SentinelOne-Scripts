@@ -29,7 +29,7 @@ param(
     [String]$Path
 )
 
-function InventoryDetails {
+function Get-InventoryDetails {
     [PSCustomObject]@{
         "DateInfoCollected" = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
         "ComputerName" = hostname.exe
@@ -52,8 +52,8 @@ function InventoryDetails {
 
 if ($Path) {
     <# If path is supplied, export to CSV. #>
-    InventoryDetails | Select-Object * | Export-CSV -Path $Path
+    Get-InventoryDetails | Select-Object * | Export-CSV -Path $Path
 } else {
     <# Action when all if and elseif conditions are false #>
-    return InventoryDetails
+    return Get-InventoryDetails
 }
