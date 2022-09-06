@@ -1,4 +1,4 @@
-# This script is used to gather laptop details, for inventorying purposes.
+# This script is used to gather system details, for inventorying purposes.
 # Version 1.0
 # Author(s): Adam Gourley
 # RSO Type: Artifact Collection

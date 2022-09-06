@@ -1,4 +1,8 @@
 #!/bin/bash
+# This script is used to gather system details, for inventorying purposes.
+# Version 1.0
+# Author(s): Adam Gourley
+# RSO Type: Artifact Collection
 
 # Get system details
 SystemDate=$(date +"%m-%d-%y %H:%M:%S")
