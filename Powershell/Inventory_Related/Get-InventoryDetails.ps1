@@ -31,7 +31,7 @@ param(
 
 function Get-InventoryDetails {
     [PSCustomObject]@{
-        "DateInfoCollected" = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        "SystemDate" = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
         "ComputerName" = hostname.exe
         "Manufacturer" = Get-WmiObject -Query "select * from Win32_ComputerSystem" | Select-Object -ExpandProperty Manufacturer
         "Domain" = Get-WmiObject -Query "select * from Win32_ComputerSystem" | Select-Object -ExpandProperty Domain
