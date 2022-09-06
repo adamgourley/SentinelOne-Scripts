@@ -54,6 +54,6 @@ if ($Path) {
     <# If path is supplied, export to CSV. #>
     Get-InventoryDetails | Select-Object * | Export-CSV -Path $Path
 } else {
-    <# Action when all if and elseif conditions are false #>
+    <# Just return the output to the console #>
     return Get-InventoryDetails
 }
